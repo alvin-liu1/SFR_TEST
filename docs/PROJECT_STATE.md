@@ -16,7 +16,7 @@ ZJ 有拉图/状态/推送调用链，但 Config/pushSFRresult.bat 缺失；拉�
 
 ## Current Work
 
-五份基线已完成事实核对和一致性检查；首次本地提交 02ef734 已完成。当前等待 GitHub 连接恢复后推送 main；下一功能 TASK UNKNOWN。
+五份基线已完成事实核对和一致性检查；首次本地提交 02ef734 已完成。main 已通过临时系统代理成功推送至 origin/main；下一功能 TASK UNKNOWN。
 
 ## Known Bugs
 
@@ -42,7 +42,7 @@ DeleteOriginPic 下失败移动不成功会删除输入；ZJ 脚本删除设备�
 
 ## Pending Tasks
 
-已在根目录初始化 main，配置 origin=https://github.com/alvin-liu1/SFR_TEST.git 和 Human 提供的提交身份。首次提交已完成；git push -u origin main 因 GitHub 443 连接超时失败，远端状态尚未核实。
+已在根目录初始化 main，配置 origin=https://github.com/alvin-liu1/SFR_TEST.git 和 Human 提供的提交身份。首次提交及 main 推送已完成。此前 Git 未配置代理，直连 HTTPS 超时；使用 git -c http.proxy=http://127.0.0.1:7890 push -u origin main 成功。代理仅用于本次命令，未写入全局或仓库配置。
 NEED USER CONFIRMATION：正式构建入口；精度参考数据、容差及 Gamma 定义；ZJ 路径/推送脚本和数据保留策略。当前构建、运行、设备验收结果 UNKNOWN。
 
 ## Recent Important Changes
